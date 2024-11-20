@@ -14,12 +14,17 @@ CR   = 0x0D
 ESC  = 0x1B
 PLUS = 0x2B
 
-#for vvm in Taipei Lab
-ip="192.168.1.204"
-addr="8"
+#chingin IP and for GPIP address setting,
+ip="192.168.1.70"
+#addr="25"
 
-#for vvm in Thule"  #ip="192.168.1.155" #addr="25"
+#for vvm in Taipei Lab or JCMT
+#ip="192.168.1.204" #addr="8"
 
+#for vvm in Thule"  
+#ip="192.168.1.204" #addr="28"
+#ip="192.168.1.155" #addr="25"
+#ip="192.168.1.74"  #addr="8"
 
 #==============================================================================
 def IsSpecial(data):
@@ -76,6 +81,7 @@ def set_device():
 
     # Set HP8508A address
     #sockGPIB.send("++addr " + addr + "\n")
+    #sockGPIB.send(b"++addr 25\n")
 
     # Turn off read-after-write to avoid "Query Unterminated" errors
     sockGPIB.send(b"++auto 0\n")
