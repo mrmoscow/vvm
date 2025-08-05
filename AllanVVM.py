@@ -16,7 +16,8 @@ import glob, os, sys
 # Starting measurements on VVM
 
 def VVM_MEAS():
-    ip="192.168.1.204"
+    ip="192.168.1.70"
+    #ip="192.168.1.204"
     sockGPIB = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.IPPROTO_TCP)
     sockGPIB.settimeout(1.0)
     sockGPIB.connect((ip, 1234))

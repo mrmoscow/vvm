@@ -1,0 +1,111 @@
+   203	13:42	rm plot_sfyen__Thu_Jul_6_13:03
+   252	18:52	cp plot_sfyen__Wed_Jul_26_18:08 plot.ps
+   261	13:49	scp sfyen@128.171.116.205:/application/bin/ivplot8.py ./
+   262	13:49	scp sfyen@128.171.116.205:/application/bin/ivplot.py ./
+   270	1:15	cp ivplot.py ivplot-00.py
+   271	1:17	python3 ivplot-00.py
+   275	1:18	pip3 install matplotlib
+   277	1:32	./ivplot-00.py -a 3 -r 2
+   278	1:32	./ivplot-00.py -a 8 -r 0
+   279	1:32	./ivplot-00.py -a 8 -r 1
+   280	1:39	vi ivplot-00.py -a 1 -r 6
+   282	1:45	./ivplot-00.py -a 1 -r 6
+   285	0:26	cat ivplot-00.py
+   286	0:36	vi ivplot.py
+   294	3:28	cat ivplot-00.py | grep exi
+   295	3:51	./ivplot-00.py -a 4 -r 2
+   296	3:54	./ivplot-00.py -a 4 -r 0
+   298	12:16	./ivplot-00.py
+   299	12:21	vi ivplot-00.py
+   300	12:21	./ivplot-00.py -a 3 -r 6
+   301	12:22	./ivplot-00.py -a 3 -r 6 -b
+   302	12:22	./ivplot-00.py -a 3 -r 4
+   304	20:15	./ivplot-00.py -a 1 -r 2
+   305	20:16	./ivplot-00.py -a 1 -r 2 -v 7.1
+   306	20:17	./ivplot-00.py -a 1 -r 6 7.1
+   307	20:17	./ivplot-00.py -a 1 -r 6 -v 7.1
+   308	20:19	mv ivplot-00.py ivplot_remote.py
+   309	20:19	cp ivplot8.py ivplot_remote.py
+   310	20:19	cat ivplot_remote.py
+   311	20:21	rm ivplot_remote.py
+   312	20:22	cp ivplot8.py ivplot8_remotely.py
+   313	20:22	cp ivplot.py ivplot_remotely.py
+   314	20:32	vi ivplot_remotely.py
+   315	20:39	ivplot_remotely.py -a 1 -r 6
+   316	20:39	./ivplot_remotely.py -a 1 -r 6
+   317	20:40	mv ivplot_remotely.py ivplot_remote.py
+   318	20:42	./ivplot_remote.py -a 1 -r 4
+   319	20:55	./ivplot_remote.py -a 1 -r 6 -b
+   320	20:56	./ivplot_remote.py -a 1 -r 0 -b
+   321	20:56	./ivplot_remote.py -a 1 -r 2 -v 7.2
+   322	20:58	./ivplot_remote.py -a 4 -r 2 -v 7.2
+   323	20:59	mv ivplot8_remotely.py ivplot8_remote.py
+   324	22:59	vi ./ivplot8_remote.py
+   325	23:07	./ivplot8_remote.py -r 2
+   326	23:40	ivplot_remote.py -a 1 -r 6
+   327	23:41	./ivplot_remote.py -a 2 -r 6
+   328	23:43	./ivplot_remote.py -a 3 -r 6
+   329	23:48	./ivplot_remote.py -a 8 -r 6
+   337	0:50	ivplot8_remote.py -r 0
+   338	0:56	rm ivplot.py
+   339	0:56	rm ivplot8.py
+   340	1:21	ivplot_remote.py -a 8 -r 0
+   341	1:26	./ivplot_remote.py -a 8 -r 0
+   353	10:52	./ivplot8_remote.py
+   354	10:52	./ivplot8_remote.py -r 0
+   624	14:06	cat ivplot8_remote.py
+   625	14:06	diff ./test.py ivplot_remote.py
+   635	14:57	mv ../plotVVM.py ./
+   636	14:58	python3.6 plotVVM.py Phase_061123_095615_1_4_RF30.txt
+   652	16:16	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_061123_095615_1_4_RF30.txt
+   656	17:11	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_061123_095615_1_4_RF180.txt
+   664	13:44	./plotVVM.py Phase_071123_102440_1_-15_RF690.txt
+   665	13:44	chmod +x ./plotVVM.py
+   666	13:45	./plotVVM.py
+   671	16:59	vi ./forvvm/plotVVM.py
+   672	17:04	vi ivplot8_remote.py
+   673	17:08	vi ivplot_remote.py
+   676	17:12	cp plotVVM.py plot-AV.py
+   677	17:13	./plot-AV.py Phase_071123_102440_1_-15_RF690.txt
+   685	18:59	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plot-AV.py Phase_071123_102440_1_-15_RF690.txt
+   688	16:37	cat plot-AV.py | grep split
+   689	16:37	cat plotVVM.py | grep split
+   690	16:37	cat plotVVM.py | grep re
+   699	17:04	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plot-AV.py ./Phase_141123_063330_1_-10_RF20.txt
+   700	17:04	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py ./Phase_141123_063330_1_-10_RF20.txt
+   706	17:16	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_071123_102440_1_-15_RF690.txt
+   709	17:28	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_141123_063330_1_-10_RF20
+   711	17:30	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_071123_075204_1_-10_RF690.txt
+   728	17:01	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_141123_063330_1_-10_RF20.txt
+   738	11:05	./ivplot_remote.py -a 6
+   739	11:09	./ivplot_remote.py -a 6 -r 6
+   740	11:09	./ivplot_remote.py -a 1 -r 0
+   741	11:17	./ivplot_remote.py -a 1 -r 6
+   742	11:24	./ivplot_remote.py -a 6 -r 0
+   743	11:27	./ivplot8_remote.py -r 6
+   744	17:05	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 plotVVM.py Phase_051017_120804_2_-25_RF306.txt
+   746	17:57	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_051017_120804_2_-25_RF306.txt
+   763	20:43	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_141154_1_1_RF648.2835.txt
+   774	20:49	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_141154_1_1_RF648.txt
+   775	20:50	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_141154_2_1_RF648.txt
+   778	20:52	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_141154_3_1_RF648.txt
+   779	20:54	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_142725_1_1_RF648.txt
+   780	20:56	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_145753_1_1_RF648.txt
+   781	20:58	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_191223_145753_2_1_RF648.txt
+   787	16:57	cat plot-AV.py
+   788	16:58	vi plot-AV.py
+   789	16:58	vi plotVVM.py
+   790	16:59	vi ./plotVVM.py
+   793	17:00	rm plot-AV.py
+   870	0:47	history | grep plotVV
+   872	0:48	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_020224_143049_1_1_RF648.txt
+   873	0:48	/asiaa/home/sfyen/miniconda3/envs/AIPython/bin/python3 ./plotVVM.py Phase_020224_143628_1_1_RF648.txt
+   880	20:09	./velplotcm/
+   971	13:41	cat plotVVM.py
+   972	13:42	history | grep plot
+   973	13:42	history | grep plot >> Howto.txt
+   627	12:26	./computeAVRanjani Phase_061123_095615_1_4_RF30.txt 1000 50 test-av.txt
+   629	14:46	./computeAVRanjani Phase_061123_095615_1_4_RF30.txt 1000 0.5 test-av.txt
+   667	17:10	./computeAVRanjani
+   974	13:42	history | grep AVR
+   975	13:42	history | grep AVR >> Howto.txt
